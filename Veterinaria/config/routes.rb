@@ -1,4 +1,6 @@
 Veterinaria::Application.routes.draw do
+  resources :doctor_patients
+
   resources :doctors
 
   resources :owner_patients
