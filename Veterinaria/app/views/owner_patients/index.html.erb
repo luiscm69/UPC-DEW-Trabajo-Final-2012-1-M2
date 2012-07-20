@@ -1,0 +1,27 @@
+<h1>Listing owner_patients</h1>
+
+<table>
+  <tr>
+    <th>Owner</th>
+    <th>Patient</th>
+    <th>Note</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @owner_patients.each do |owner_patient| %>
+  <tr>
+    <td><%= owner_patient.owner_id %></td>
+    <td><%= owner_patient.patient_id %></td>
+    <td><%= owner_patient.note %></td>
+    <td><%= link_to 'Show', owner_patient %></td>
+    <td><%= link_to 'Edit', edit_owner_patient_path(owner_patient) %></td>
+    <td><%= link_to 'Destroy', owner_patient, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Owner patient', new_owner_patient_path %>

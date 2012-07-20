@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  species: MyString
+  race: MyString
+  blood: MyString
+  sterilized: MyString
+  size: MyString
+  activity: MyString
+  weight: MyString
+  bith: MyString
+
+two:
+  name: MyString
+  species: MyString
+  race: MyString
+  blood: MyString
+  sterilized: MyString
+  size: MyString
+  activity: MyString
+  weight: MyString
+  bith: MyString

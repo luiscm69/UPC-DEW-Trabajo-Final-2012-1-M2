@@ -1,4 +1,10 @@
 Veterinaria::Application.routes.draw do
+  resources :owner_patients
+
+  resources :patients
+
+  resources :owners
+
   resources :prospects
 
   # The priority is based upon order of creation:

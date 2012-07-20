@@ -11,7 +11,39 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120719184213) do
+ActiveRecord::Schema.define(:version => 20120720051452) do
+
+  create_table "owner_patients", :force => true do |t|
+    t.integer  "owner_id"
+    t.integer  "patient_id"
+    t.text     "note"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "owners", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "address"
+    t.string   "phone"
+    t.string   "cellphone"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "patients", :force => true do |t|
+    t.string   "name"
+    t.string   "species"
+    t.string   "race"
+    t.string   "blood"
+    t.string   "sterilized"
+    t.string   "size"
+    t.string   "activity"
+    t.string   "weight"
+    t.string   "bith"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "prospects", :force => true do |t|
     t.string   "name"
