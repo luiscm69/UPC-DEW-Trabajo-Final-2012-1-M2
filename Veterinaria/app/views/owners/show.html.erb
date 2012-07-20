@@ -25,6 +25,15 @@
   <%= @owner.cellphone %>
 </p>
 
+<table>
+	<% @owner.patients.each do |patient| %>
+		<tr>
+			<td><%= patient.name  %></td>
+		</tr>
+	
+	<% end %>
+</table>
 
+<%= link_to 'Add Patient', add_patient_owner_path(@owner) %>
 <%= link_to 'Edit', edit_owner_path(@owner) %> |
 <%= link_to 'Back', owners_path %>
