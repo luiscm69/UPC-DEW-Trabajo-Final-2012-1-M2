@@ -1,5 +1,10 @@
 Veterinaria::Application.routes.draw do
 <<<<<<< HEAD
+
+  resources :vaccines
+
+=======
+<<<<<<< HEAD
   resources :doctor_patients
 
 =======
@@ -7,15 +12,19 @@ Veterinaria::Application.routes.draw do
   resources :vaccines
 =======
 >>>>>>> 812816813bf5c22e8cc139c95cb4e1ae6a00b254
+>>>>>>> 9dd5da956a8d4b4005e469d4b800d295eadcf537
   resources :doctors
->>>>>>> 8bb51f28386542183d60d5c81a29da8fd5f359ae
+
 
   resources :owner_patients
 
   resources :patients
 
-  resources :owners
-
+  resources :owners do
+   member do
+		get "add_patient"
+	end
+  end
   resources :prospects
 
   # The priority is based upon order of creation:
