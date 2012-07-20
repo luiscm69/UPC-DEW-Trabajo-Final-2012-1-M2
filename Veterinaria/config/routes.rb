@@ -1,7 +1,14 @@
 Veterinaria::Application.routes.draw do
+<<<<<<< HEAD
   resources :doctor_patients
 
+=======
+<<<<<<< HEAD
+  resources :vaccines
+=======
+>>>>>>> 812816813bf5c22e8cc139c95cb4e1ae6a00b254
   resources :doctors
+>>>>>>> 8bb51f28386542183d60d5c81a29da8fd5f359ae
 
   resources :owner_patients
 
