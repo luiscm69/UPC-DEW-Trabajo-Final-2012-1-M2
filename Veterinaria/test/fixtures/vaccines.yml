@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  patient: MyString
+  owner: MyString
+  phone: MyString
+  address: MyString
+  date: 2012-07-20
+
+two:
+  name: MyString
+  patient: MyString
+  owner: MyString
+  phone: MyString
+  address: MyString
+  date: 2012-07-20
