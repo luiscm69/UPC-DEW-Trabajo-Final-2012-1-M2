@@ -1,0 +1,33 @@
+<h1>Listing prospects</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Image</th>
+    <th>Phone</th>
+    <th>Cellphone</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @prospects.each do |prospect| %>
+  <tr>
+    <td><%= prospect.name %></td>
+    <td><%= prospect.email %></td>
+    <td><%= prospect.address %></td>
+    <td><%= prospect.image %></td>
+    <td><%= prospect.phone %></td>
+    <td><%= prospect.cellphone %></td>
+    <td><%= link_to 'Show', prospect %></td>
+    <td><%= link_to 'Edit', edit_prospect_path(prospect) %></td>
+    <td><%= link_to 'Destroy', prospect, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Prospect', new_prospect_path %>

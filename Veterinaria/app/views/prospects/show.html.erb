@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @prospect.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @prospect.email %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @prospect.address %>
+</p>
+
+<p>
+  <b>Image:</b>
+  <%= @prospect.image %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @prospect.phone %>
+</p>
+
+<p>
+  <b>Cellphone:</b>
+  <%= @prospect.cellphone %>
+</p>
+
+
+<%= link_to 'Edit', edit_prospect_path(@prospect) %> |
+<%= link_to 'Back', prospects_path %>
