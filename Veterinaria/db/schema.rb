@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120720062036) do
+ActiveRecord::Schema.define(:version => 20120721052209) do
 
   create_table "doctor_patients", :force => true do |t|
     t.integer  "doctor_id"
@@ -33,6 +33,11 @@ ActiveRecord::Schema.define(:version => 20120720062036) do
     t.string   "password"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+  end
+
+  create_table "indices", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "owner_patients", :force => true do |t|

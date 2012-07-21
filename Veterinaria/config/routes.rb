@@ -1,6 +1,7 @@
 Veterinaria::Application.routes.draw do
+  root :to =>  "indices#index"
 
-  root :to => "doctors#index"
+  resources :indices
 
   resources :vaccines
 
