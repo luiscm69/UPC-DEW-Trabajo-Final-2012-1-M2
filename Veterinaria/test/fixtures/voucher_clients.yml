@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  owner_id: 1
+  patient_id: 1
+  ruc: MyString
+  direccion: MyString
+  fecharegistro: 2012-07-21
+  detalle: MyText
+  precio: 9.99
+  cantidad: 1
+
+two:
+  owner_id: 1
+  patient_id: 1
+  ruc: MyString
+  direccion: MyString
+  fecharegistro: 2012-07-21
+  detalle: MyText
+  precio: 9.99
+  cantidad: 1
