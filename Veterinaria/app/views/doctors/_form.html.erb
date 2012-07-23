@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :authentication %><br />
-    <%= f.text_field :authentication %>
+    <%= f.select :authentication, options_for_select(["","Administrator","User"]) %>
   </div>
   <div class="field">
     <%= f.label :name %><br />
