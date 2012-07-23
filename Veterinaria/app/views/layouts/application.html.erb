@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Veterinaria</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+  
+	<title>Pet Shop</title>
+	<meta  charset=iso-8859-1" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<!--[if IE 6]>
+		<link href="css/ie6.css" rel="stylesheet" type="text/css" />
+	<![endif]-->
+	<!--[if IE 7]>
+        <link href="css/ie7.css" rel="stylesheet" type="text/css" />  
+	<![endif]-->  
+	<%= stylesheet_link_tag    "application", :media => "all" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
+  
 </head>
 <body>
 
-<%= yield %>
-
+	<div id="header" style="position:relative; height:100px">
+			<%= image_tag ("logo.gif" ) %>
+			
+			<ul class="navigation">
+				<li class="active"><%= link_to "Doctors", 'doctors' %>Doctors</li>
+				<li class="active"><%= link_to "Patients", 'patients' %>Patients</li>
+				<li class="active"><%= link_to "Prospects", 'prospects' %>Prospects</li>
+				<li class="active"><%= link_to "Owners", 'owners' %>Owners</li>
+				<li class="active"><%= link_to "Vaccines", 'vaccines' %>Vaccines</li>
+				<li class="active"><a href="#">Home</a></li>
+			</ul>
+	</div>
+	
+	<div id="BodyPrincipal" style="position:relative; height:1096px ">
+	<%= yield %>
+	</div>
+		
+	<div id="footer">
+			<div class="section">
+				<ul>
+					<li>
+						<%= image_tag ("friendly-pets.jpg" ) %>
+						<h2><a href="index.html">Friendly Pets</a></h2>
+						<p>
+						   Lorem ipsum dolor sit amet, consectetuer adepiscing elit,  sed diam nonummy nib.
+						</p>
+					</li>	
+					<li>
+						<%= image_tag ("pet-lover2.jpg" ) %>
+						<h2><a href="index.html">How dangerous are they</a></h2>
+						<p>
+						   Lorem ipsum dolor sit amet, cons ectetuer adepis cing, sed diam euis.
+						</p>
+					</li>	
+					<li>
+						<%= image_tag ("healthy-dog.jpg" ) %>
+						<h2><a href="index.html">Keep them healthy</a></h2>
+						<p>
+						   Lorem ipsum dolor sit amet, consectetuer adepiscing elit,  sed diam nonu mmy.
+						</p>
+					</li>	
+					<li>
+						
+						<h2><a href="index.html">Love...love...love...pets</a></h2>
+						<p>
+							 Lorem ipsum dolor sit amet, consectetuer adepiscing elit,  sed diameusim.
+						</p>
+						<%= image_tag ("pet-lover.jpg" ) %>
+					</li>	
+				</ul>
+			</div>
+			<div id="footnote">
+				<div class="section">
+				   &copy; 2012 Petshop. All Rights Reserved.
+				</div>
+			</div>
+	</div>	
+	
 </body>
 </html>
