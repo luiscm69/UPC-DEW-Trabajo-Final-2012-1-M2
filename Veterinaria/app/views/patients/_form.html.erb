@@ -29,15 +29,15 @@
   </div>
   <div class="field">
     <%= f.label :sterilized %><br />
-    <%= f.text_field :sterilized %>
+    <%= f.select :sterilized, options_for_select(["","Yes","No"]) %>
   </div>
   <div class="field">
     <%= f.label :size %><br />
-    <%= f.text_field :size %>
+    <%= f.select :size, options_for_select(["","little","medium","big"]) %>
   </div>
   <div class="field">
     <%= f.label :activity %><br />
-    <%= f.text_field :activity %>
+    <%= f.select :activity, options_for_select(["","low","medium","strong"]) %>
   </div>
   <div class="field">
     <%= f.label :weight %><br />
