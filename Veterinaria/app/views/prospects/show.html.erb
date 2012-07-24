@@ -16,11 +16,6 @@
 </p>
 
 <p>
-  <b>Image:</b>
-  <%= @prospect.image %>
-</p>
-
-<p>
   <b>Phone:</b>
   <%= @prospect.phone %>
 </p>
@@ -29,6 +24,10 @@
   <b>Cellphone:</b>
   <%= @prospect.cellphone %>
 </p>
+
+<div>
+	<%= image_tag (@prospect.image) %>
+</div>
 
 
 <%= link_to 'Edit', edit_prospect_path(@prospect) %> |
