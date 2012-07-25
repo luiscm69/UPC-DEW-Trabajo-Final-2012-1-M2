@@ -1,4 +1,6 @@
 Veterinaria::Application.routes.draw do
+  resources :products
+
   root :to =>  "indices#index"
 
   resources :voucher_clients
