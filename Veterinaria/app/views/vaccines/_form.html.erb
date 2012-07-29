@@ -17,20 +17,21 @@
   </div>
   <div class="field">
     <%= f.label :patient %><br />
-    <%= f.text_field :patient %>
+	<%= f.collection_select :patient, Patient.all, :name, :name,  :prompt => true %>
   </div>
   <div class="field">
     <%= f.label :owner %><br />
-    <%= f.text_field :owner %>
+	<%= f.collection_select :owner, Owner.all, :name, :name, :prompt => true %>
   </div>
   <div class="field">
     <%= f.label :date %><br />
     <%= f.date_select :date %>
   </div>
-    <div class="field">
+  <div class="field">
     <%= f.label :expiration %><br />
     <%= f.date_select :expiration %>
   </div>
+  
   <div class="actions">
     <%= f.submit %>
   </div>
