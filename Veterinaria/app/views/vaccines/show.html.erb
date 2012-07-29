@@ -20,6 +20,11 @@
   <%= @vaccine.date %>
 </p>
 
+<p>
+  <b>Expiration:</b>
+  <%= @vaccine.expiration %>
+</p>
+
 
 <%= link_to 'Edit', edit_vaccine_path(@vaccine) %> |
 <%= link_to 'Back', vaccines_path %>

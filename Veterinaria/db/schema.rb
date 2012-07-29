@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120728191620) do
+ActiveRecord::Schema.define(:version => 20120729024703) do
 
   create_table "articles", :force => true do |t|
     t.string   "articlename"
@@ -107,6 +107,7 @@ ActiveRecord::Schema.define(:version => 20120728191620) do
     t.date     "date"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.date     "expiration"
   end
 
   create_table "voucher_clients", :force => true do |t|

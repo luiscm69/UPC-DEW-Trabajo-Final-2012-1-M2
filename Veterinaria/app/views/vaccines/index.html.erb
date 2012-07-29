@@ -6,6 +6,7 @@
     <th>Patient</th>
     <th>Owner</th>
     <th>Date</th>
+	<th>Expiration</th>
     <th></th>
     <th></th>
     <th></th>
@@ -17,6 +18,7 @@
     <td><%= vaccine.patient %></td>
     <td><%= vaccine.owner %></td>
     <td><%= vaccine.date %></td>
+	<td><%= vaccine.expiration %></td>
     <td><%= link_to 'Show', vaccine %></td>
     <td><%= link_to 'Edit', edit_vaccine_path(vaccine) %></td>
     <td><%= link_to 'Destroy', vaccine, confirm: 'Are you sure?', method: :delete %></td>
