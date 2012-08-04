@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SecurePassword</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<header>
+		<h1>Secure Login Sample</h1>
+	</header>
+	<section id="main">
+		<% if flash[:notice] %>
+			<div class="notice"><%= flash[:notice] %></div>	
+		<% end %>	
+	<%= yield %>
+	</section>
+<footer>
+ <sub>Esto es sólo un ejemplo de implementación, se puede mejorar mucho </sub>	
+</footer>
+ 
+</body>
+</html>

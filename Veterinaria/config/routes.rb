@@ -1,4 +1,6 @@
 Veterinaria::Application.routes.draw do
+  resources :sessions
+  
   resources :articles
 
   resources :products
