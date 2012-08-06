@@ -71,13 +71,32 @@
 			<%= image_tag ("logo.gif" ) %>
 			
 			<ul class="navigation">
-				<li class="active"><%= link_to "Doctors", 'doctors' %>Doctors</li>
-				<li class="active"><%= link_to "Patients", 'patients' %>Patients</li>
-				<li class="active"><%= link_to "Prospects", 'prospects' %>Prospects</li>
-				<li class="active"><%= link_to "Owners", 'owners' %>Owners</li>
-				<li class="active"><%= link_to "Vaccines", 'vaccines' %>Vaccines</li>
-				<li class="active"><%= link_to "Indices", 'indices' %>Home</li>
+				<li class="active"><%= link_to "Doctors", doctors_path %>Doctors</li>
+				<li class="active"><%= link_to "Patients", patients_path %>Patients</li>
+				<li class="active"><%= link_to "Prospects", prospects_path %>Prospects</li>
+				<li class="active"><%= link_to "Owners", owners_path %>Owners</li>
+				<li class="active"><%= link_to "Vaccines", vaccines_path %>Vaccines</li>
+				<li class="active"><%= link_to "Indices", indices_path %>Home</li>
 			</ul>
+	</div>
+	
+	<div id="buscador" style="position:relative; left:1180px; top:18px; heigth:200px; width:150px">
+		<div style="background-color:orange">
+			Buscador
+		</div>
+		<div>
+			Item:
+			<select name="comboBuscador">
+				<option value="doctor">Doctor</option>
+				<option value="patient">Patient</option>
+				<option value="prospect">Prospect</option>
+				<option value="owner">Owner</option>
+				<option value="vaccine">Vaccine</option>
+			</select>						
+		</div>
+		<div>
+			<input type="button" value	="buscar"></input>
+		</div>
 	</div>
 	
 	<div id="BodyPrincipal" style="position:relative; height:20% ">
