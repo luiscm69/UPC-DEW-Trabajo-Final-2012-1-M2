@@ -18,5 +18,15 @@ class SessionsController < ApplicationController
 	 else
 		render :new
 	 end
-    end 		
+    end 	
+	
+	def destroy
+		
+		session[:user_id] = nil
+		session[:user_name] = nil
+		session[:user_display] = nil
+		
+		redirect_to new_session_path
+		
+	end
 end

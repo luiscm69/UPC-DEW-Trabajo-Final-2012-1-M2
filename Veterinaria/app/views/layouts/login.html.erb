@@ -9,6 +9,11 @@
 <body>
 	<header>
 		<h1>Secure Login Sample</h1>
+		<% if session[:user_id] %>
+			<%= link_to "Logout", sessions_path, method: :delete %> --Bienvenido <%= session[:user_display] %>
+		<% else %>
+			<%= link_to "Login", new_sessions_path %>
+		<% end %>
 	</header>
 	<section id="main">
 		<% if flash[:notice] %>
@@ -16,9 +21,5 @@
 		<% end %>	
 	<%= yield %>
 	</section>
-<footer>
- <sub>Esto es sólo un ejemplo de implementación, se puede mejorar mucho </sub>	
-</footer>
- 
 </body>
 </html>

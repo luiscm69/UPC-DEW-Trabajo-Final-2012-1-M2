@@ -2,7 +2,7 @@ Veterinaria::Application.routes.draw do
   resources :users
 
   resource :sessions
-  
+      
   resources :articles
 
   resources :products
