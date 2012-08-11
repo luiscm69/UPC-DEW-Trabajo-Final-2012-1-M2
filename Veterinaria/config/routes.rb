@@ -1,5 +1,13 @@
 Veterinaria::Application.routes.draw do
 
+  resources :client_vouchers
+
+  resources :vouchers_clients
+
+  resources :voucher_clientes
+
+  resources :vouchers
+
   resources :owner_notes
 
   resources :notes

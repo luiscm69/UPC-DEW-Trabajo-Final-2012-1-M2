@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ruc: MyString
+  direccion: MyString
+  fecha: 2012-08-11
+  detalle: MyText
+  precio: 9.99
+  cantidad: 1
+
+two:
+  ruc: MyString
+  direccion: MyString
+  fecha: 2012-08-11
+  detalle: MyText
+  precio: 9.99
+  cantidad: 1

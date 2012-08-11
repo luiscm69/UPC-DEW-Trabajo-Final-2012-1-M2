@@ -1,0 +1,2 @@
+class ClientVouchersController < ApplicationController
+end

@@ -1,0 +1,2 @@
+class VoucherClientesController < ApplicationController
+end

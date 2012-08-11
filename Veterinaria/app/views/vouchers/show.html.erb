@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Ruc:</b>
+  <%= @voucher.ruc %>
+</p>
+
+<p>
+  <b>Direccion:</b>
+  <%= @voucher.direccion %>
+</p>
+
+<p>
+  <b>Fecha:</b>
+  <%= @voucher.fecha %>
+</p>
+
+<p>
+  <b>Detalle:</b>
+  <%= @voucher.detalle %>
+</p>
+
+<p>
+  <b>Precio:</b>
+  <%= @voucher.precio %>
+</p>
+
+<p>
+  <b>Cantidad:</b>
+  <%= @voucher.cantidad %>
+</p>
+
+
+<%= link_to 'Edit', edit_voucher_path(@voucher) %> |
+<%= link_to 'Back', vouchers_path %>
