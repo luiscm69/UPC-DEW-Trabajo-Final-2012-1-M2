@@ -1,5 +1,17 @@
 Veterinaria::Application.routes.draw do
 
+  resources :password_resets
+
+  resources :sessions
+
+  resources :users
+
+  match 'logout', to: 'sessions#destroy', as: 'logout'
+
+  match 'login', to: 'sessions#new', as: 'login'
+
+  match 'signup', to: 'users#new', as: 'signup'
+
   resources :articles
 
   resources :products
