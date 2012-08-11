@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Owner:</b>
+  <%= @owner_note.owner_id %>
+</p>
+
+<p>
+  <b>Note:</b>
+  <%= @owner_note.note_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_owner_note_path(@owner_note) %> |
+<%= link_to 'Back', owner_notes_path %>

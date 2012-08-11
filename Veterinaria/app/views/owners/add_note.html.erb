@@ -1,0 +1,11 @@
+<h2>Bienvenido, <%= @owner.name %> </h2>
+
+<%= simple_form_for(@owner) do |f| %>
+
+	<%= f.association :notes, :as => "select" %> <br />
+
+	<%= f.button :submit %>
+
+<% end %>
+
+<%= link_to "Registrar Nota Primero", notes_path %>

@@ -35,6 +35,17 @@
 	<% end %>
 </table>
 
+<table>
+	<% @owner.notes.each do |note| %>
+		<tr>
+			<td><b>Note:</b></td>
+			<td><%= note.description  %></td>
+		</tr>
+	
+	<% end %>
+</table>
+
 <%= link_to 'Add Patient', add_patient_owner_path(@owner) %>
+<%= link_to 'Add Note', add_note_owner_path(@owner) %>
 <%= link_to 'Edit', edit_owner_path(@owner) %> |
 <%= link_to 'Back', owners_path %>

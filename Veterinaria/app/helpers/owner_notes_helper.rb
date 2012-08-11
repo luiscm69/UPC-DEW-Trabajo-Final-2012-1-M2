@@ -1,0 +1,2 @@
+module OwnerNotesHelper
+end

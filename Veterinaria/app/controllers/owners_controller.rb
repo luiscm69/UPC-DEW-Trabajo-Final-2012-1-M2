@@ -2,6 +2,10 @@ class OwnersController < ApplicationController
   # GET /owners
   # GET /owners.json
   
+      def add_note
+	@owner = Owner.find(params[:id])
+  end
+  
     def add_patient
 	@owner = Owner.find(params[:id])
   end

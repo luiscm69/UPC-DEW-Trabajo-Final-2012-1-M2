@@ -1,5 +1,9 @@
 Veterinaria::Application.routes.draw do
 
+  resources :owner_notes
+
+  resources :notes
+
   resources :password_resets
 
   resources :sessions
@@ -42,6 +46,12 @@ match '/calendar(/:year(/:month))' => 'event#index', :as => :calendar, :constrai
   resources :owners do
    member do
 		get "add_patient"
+	end
+  end
+    
+  resources :owners do
+   member do
+		get "add_note"
 	end
   end
   
