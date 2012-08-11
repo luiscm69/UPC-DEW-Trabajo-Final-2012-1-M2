@@ -1,5 +1,6 @@
 Veterinaria::Application.routes.draw do
 
+<<<<<<< HEAD
   resources :password_resets
 
   resources :sessions
@@ -11,6 +12,11 @@ Veterinaria::Application.routes.draw do
   match 'login', to: 'sessions#new', as: 'login'
 
   match 'signup', to: 'users#new', as: 'signup'
+=======
+match '/calendar(/:year(/:month))' => 'event#index', :as => :calendar, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/}
+
+  resources :events
+>>>>>>> e07d79096d09ffa230b7d7a1b36166b6f8606dd1
 
   resources :articles
 

@@ -11,7 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20120811042830) do
+=======
+ActiveRecord::Schema.define(:version => 20120811041922) do
+>>>>>>> e07d79096d09ffa230b7d7a1b36166b6f8606dd1
 
   create_table "articles", :force => true do |t|
     t.string   "articlename"
@@ -41,6 +45,14 @@ ActiveRecord::Schema.define(:version => 20120811042830) do
     t.string   "password"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+  end
+
+  create_table "events", :force => true do |t|
+    t.string   "name"
+    t.datetime "start_at"
+    t.datetime "end_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "indices", :force => true do |t|
@@ -100,6 +112,7 @@ ActiveRecord::Schema.define(:version => 20120811042830) do
     t.boolean  "clientstatus"
   end
 
+<<<<<<< HEAD
   create_table "users", :force => true do |t|
     t.string   "email"
     t.string   "password_digest"
@@ -110,6 +123,8 @@ ActiveRecord::Schema.define(:version => 20120811042830) do
     t.datetime "updated_at",             :null => false
   end
 
+=======
+>>>>>>> e07d79096d09ffa230b7d7a1b36166b6f8606dd1
   create_table "vaccines", :force => true do |t|
     t.string   "name"
     t.string   "patient"
