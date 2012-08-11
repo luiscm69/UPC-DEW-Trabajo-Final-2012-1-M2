@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
       end
       redirect_to "/indices", :notice => "Logged in!"
     else
-      flash.now.alert = "Invalid email or password"
+      flash[:notice] = 'Error, your user or password is incorrect!!!'
       render "new"
     end
   end
