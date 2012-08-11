@@ -14,3 +14,5 @@ Aaron Casta�on
 Marcos Levano
 
 LINK SCRUMY: http://scrumy.com/valanced02handler
+LINK DROPBOX (tareas diarias):
+https://www.dropbox.com/s/7uuaaawdos1kpcp/Diario.xlsx
