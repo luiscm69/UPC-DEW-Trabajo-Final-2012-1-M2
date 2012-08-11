@@ -1,6 +1,11 @@
 class ProspectsController < ApplicationController
   # GET /prospects
   # GET /prospects.json
+  
+  	def cliente
+		@prospect = Prospect.find(params[:id])
+	end
+  
   def index
     @prospects = Prospect.all
 

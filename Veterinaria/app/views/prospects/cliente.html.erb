@@ -1,0 +1,11 @@
+<h1>Owner created succesfull</h1>
+<%= form_for(@prospect) do |f| %>
+<% owner = Owner.new %> 
+<% owner.name = @prospect.name %>
+<% owner.email = @prospect.email %>
+<% owner.address = @prospect.address %>
+<% owner.phone = @prospect.phone %>
+<% owner.cellphone = @prospect.cellphone %>
+<% owner = owner.save %>
+  <% end %>
+<%= link_to 'Show owners', owners_path %>

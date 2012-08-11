@@ -44,6 +44,13 @@ match '/calendar(/:year(/:month))' => 'event#index', :as => :calendar, :constrai
 		get "add_patient"
 	end
   end
+  
+  	resources :prospects do
+		member do
+			get "cliente"
+		end
+	end
+  
   resources :prospects
 
   # The priority is based upon order of creation:

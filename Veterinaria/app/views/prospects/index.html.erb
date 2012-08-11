@@ -23,6 +23,7 @@
     <td><%= prospect.cellphone %></td>
     <td><%= link_to 'Show', prospect %></td>
     <td><%= link_to 'Edit', edit_prospect_path(prospect) %></td>
+	<td><%= link_to 'Aprobar Cliente', cliente_prospect_path(prospect) %></td>
     <td><%= link_to 'Destroy', prospect, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
