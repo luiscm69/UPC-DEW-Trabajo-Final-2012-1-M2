@@ -1,0 +1,9 @@
+<h1>Listing events</h1>
+
+<%= link_to 'New Event', new_event_path %>
+
+<br />
+
+<%= stylesheet_link_tag "event_calendar" %>
+<%= javascript_include_tag "event_calendar" %>
+<%= raw(event_calendar) %>

@@ -1,5 +1,9 @@
 Veterinaria::Application.routes.draw do
 
+match '/calendar(/:year(/:month))' => 'event#index', :as => :calendar, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/}
+
+  resources :events
+
   resources :articles
 
   resources :products
