@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+    layout "application2"
   def new
   end
 
@@ -10,7 +11,7 @@ class SessionsController < ApplicationController
       else
         cookies[:auth_token] = user.auth_token
       end
-      redirect_to root_url, :notice => "Logged in!"
+      redirect_to "/indices", :notice => "Logged in!"
     else
       flash.now.alert = "Invalid email or password"
       render "new"

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+	<title>Pet Shop</title>
+	<meta  charset=iso-8859-1" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<!--[if IE 6]>
+		<link href="css/ie6.css" rel="stylesheet" type="text/css" />
+	<![endif]-->
+	<!--[if IE 7]>
+        <link href="css/ie7.css" rel="stylesheet" type="text/css" />  
+	<![endif]-->  
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" charset="utf-8"></script>
+	<%= stylesheet_link_tag    "application", :media => "all" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
+  
+  
+  <script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			*   Examples - images
+			*/
+
+			$("a.pop1").fancybox();
+
+			$("a.pop2").fancybox({
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'elastic'
+			});
+
+			$("a.pop3").fancybox({
+				'transitionIn'	: 'none',
+				'transitionOut'	: 'none',
+				'overlayColor'		: '#000',
+				'overlayOpacity'	: 0.7		
+			});
+
+			$("a.pop4").fancybox({
+				'opacity'		: true,
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'none'
+			});
+
+			$("a.pop5").fancybox();
+
+			$("a#example6").fancybox({
+				'titlePosition'		: 'outside',
+				'overlayColor'		: '#000',
+				'overlayOpacity'	: 0.9
+			});
+
+			$("a.pop6").fancybox({
+				'titlePosition'	: 'inside'
+			});
+
+			$("a.pop7").fancybox({
+				'titlePosition'	: 'over'
+			});
+
+		});
+	</script>
+  
+</head>
+<body>
+
+	<div id="header" style="position:relative; height:100px">
+			<%= image_tag ("logo.gif" ) %>
+			
+			<ul class="navigation">
+				<li class="active">DDoctors</li>
+				<li class="active">Patients</li>
+				<li class="active">Prospects</li>
+				<li class="active">Owners</li>
+				<li class="active">Vaccines</li>
+				<li class="active">Home</li>
+			</ul>
+	</div>
+	
+	<div id="BodyPrincipal" style="position:relative; height:20% ">
+	<b><p style="color: red"><%= flash[:notice] %></p></b>
+	<%= yield %>
+	</div>
+		
+	<div id="footer">
+			<div class="section">
+				<ul>
+					<li>
+						<%= image_tag ("friendly-pets.jpg" ) %>
+						<h2><a href="index.html">Friendly Pets</a></h2>
+						<p>
+						   
+						</p>
+					</li>	
+					<li>
+						<%= image_tag ("pet-lover2.jpg" ) %>
+						<h2><a href="index.html">How dangerous are they</a></h2>
+						<p>
+						   
+						</p>
+					</li>	
+					<li>
+						<%= image_tag ("healthy-dog.jpg" ) %>
+						<h2><a href="index.html">Keep them healthy</a></h2>
+						<p>
+						   
+						</p>
+					</li>	
+					<li>
+						
+						<h2><a href="index.html">Love...love...love...pets</a></h2>
+						<p>
+							 
+						</p>
+						<%= image_tag ("pet-lover.jpg" ) %>
+					</li>	
+				</ul>
+			</div>
+			<div id="footnote">
+				<div class="section">
+				   &copy; 2012 Veterinary. All Rights Reserved.
+				</div>
+			</div>
+	</div>	
+	
+</body>
+</html>
